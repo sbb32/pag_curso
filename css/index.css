@@ -260,7 +260,7 @@ transform: translateX(40px);
 /*celular*/
 @media (max-width: 700px){
   .noticias-generales {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto;
   }
 }
 
