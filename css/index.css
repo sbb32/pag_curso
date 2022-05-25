@@ -146,31 +146,72 @@ body {
   font-size: 16px;
 }
 
-.news-cards {
+.noticias-generales{
+  padding-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin: 80px 0;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 25px;
+  margin: 70px 0;
 }
-.imagen-index{
-  transform: translateX(50px);
-}
-.news-cards img {
+
+.contenedor{
   width: 100%;
-  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
-.news-cards h3 {
-  font-size: 20px;
-  margin: 10px 0;
+.contenedor figure{
+ position:relative;
+  height: 250px;
+  cursor: pointer;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
-
-.news-cards a {
-  padding: 10px 0;
-  color: rgba(187, 68, 48, 1);
-  text-transform: uppercase;
-  display: inline-block;
-  font-weight: bold;
+.contenedor figure img{
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+.contenedor figure .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,103,123,0.7);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+ text-align: center;
+}
+.contenedor figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+.contenedor figure:hover > .capa h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.contenedor figure:hover > img{
+  transform: scale(1.3);
+}
+.contenedor figure .capa h3{
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+   margin-top: 30px;
+}
+.contenedor figure .capa p{
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
 }
 .nav-brand {
   width: 100px;
@@ -189,6 +230,7 @@ grid-template-columns: repeat(4, 1fr);
 gap: 25px;
 margin: 70px 0;
 justify-content: space-evenly;
+transform: translateX(40px);
 }
 
 .imagen-tecnologia{
@@ -200,6 +242,7 @@ grid-template-columns: repeat(4, 1fr);
 gap: 25px;
 margin: 70px 0;
 justify-content: space-evenly;
+transform: translateX(40px);
 }
 .imagen-interes{
 padding-top: 1rem;
@@ -210,18 +253,19 @@ grid-template-columns: repeat(4, 1fr);
 gap: 25px;
 margin: 70px 0;
 justify-content: space-evenly;
+transform: translateX(40px);
 }
 
 
 /*celular*/
 @media (max-width: 700px){
-  .news-cards {
+  .noticias-generales {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 500px){
-  .news-cards{
+  .noticias-generales{
     display: block;
   }
 }
