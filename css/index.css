@@ -7,7 +7,7 @@
 
 nav.menu  {
   position: absolute;
-  width: 1380px;
+  width: 1364px;
   height: 163px;
   left: -15px;
   top: 0px;background: #333333; 
@@ -22,7 +22,7 @@ nav.menu {
   display: flex;
   justify-content:space-between ;
   align-items: center;
-  height: 60px;
+  height: 55px;
   padding:20px 0 ; 
  
 
@@ -59,13 +59,6 @@ div .imagen-c{
   width: 400px;
 }
 
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background-color: #efe6dd;
@@ -111,13 +104,17 @@ body {
   font-size: 18px;
   color: white;
 }
-
+.imagen-index{
+  transform: translateX(20px);
+  width: 900px;
+}
 .index-noticia{
   padding-top: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   margin: 70px 0;
+
 }
 .form-register p {
   height: 40px;
@@ -256,6 +253,49 @@ justify-content: space-evenly;
 transform: translateX(40px);
 }
 
+.footer {
+  background: -webkit-linear-gradient(to left, #dd1818, #333333);  
+  background: linear-gradient(to left, #dd1818, #333333); 
+  text-align: center;
+}
+
+.footer__logo {
+  width: 100px;
+}
+
+.footer__nav {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  color: var(--dark-moderate-cyan);
+  text-decoration: none;
+  padding: 1.5rem 0 3rem;
+}
+
+.footer__social {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer__icon{
+  width: 50px;
+}
+
+.footer-contact{
+  background: -webkit-linear-gradient(to left, #dd1818, #333333);  
+  background: linear-gradient(to left, #dd1818, #333333); 
+  text-align: center;
+  transform: translateY(35px); 
+}
 
 /*celular*/
 @media (max-width: 700px){
@@ -268,4 +308,9 @@ transform: translateX(40px);
   .noticias-generales{
     display: block;
   }
+
+.footer__link {
+        
+  padding: 2rem 0 5rem;
+}
 }
