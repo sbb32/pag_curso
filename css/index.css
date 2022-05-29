@@ -218,41 +218,6 @@ body {
 
 }
 
-.imagen-hoy{
-padding-top: 1rem;
-width: 400px;
-height: 400px;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 25px;
-margin: 70px 0;
-justify-content: space-evenly;
-transform: translateX(40px);
-}
-
-.imagen-tecnologia{
-padding-top: 1rem;
-width: 400px;
-height: 400px;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 25px;
-margin: 70px 0;
-justify-content: space-evenly;
-transform: translateX(40px);
-}
-.imagen-interes{
-padding-top: 1rem;
-width: 400px;
-height: 400px;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 25px;
-margin: 70px 0;
-justify-content: space-evenly;
-transform: translateX(40px);
-}
-
 .footer {
   background: -webkit-linear-gradient(to left, #dd1818, #333333);  
   background: linear-gradient(to left, #dd1818, #333333); 
