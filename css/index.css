@@ -227,6 +227,7 @@ body {
   background: linear-gradient(to left, #dd1818, #333333); 
   text-align: center;
   transform: translateY(70px);
+  font-size: 10px;
 }
 
 .footer__logo {
