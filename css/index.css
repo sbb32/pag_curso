@@ -21,6 +21,10 @@
   grid-column: 4 / 7;
   display: flex;
 }
+.navbar .menu-h {
+  grid-column: 4 / 7;
+  display: flex;
+}
 .navbar ul li {
   margin-right: 3em;
   list-style: none;
@@ -302,7 +306,20 @@ body {
     background: linear-gradient(to left, #dd1818, #333333); 
     transform: translateX(50%);
     transition: all 1s;
-    margin-top: 34em;
+    margin-top: 28.7em;
+    z-index: 1;
+  } 
+  .navbar .menu-h {
+    position: absolute;
+    width: 50%;
+    height: 70vh;
+    display: grid;
+    align-items: center;
+    background: -webkit-linear-gradient(to left, #dd1818, #333333);  
+    background: linear-gradient(to left, #dd1818, #333333); 
+    transform: translateX(50%);
+    transition: all 1s;
+    margin-top: 31em;
     z-index: 1;
   } 
   .navbar .menu-toggle {
@@ -329,7 +346,10 @@ body {
     font-size: 2em;
     cursor: pointer;
     z-index: 1;
-  }  
+  } 
+  .formulario{
+    transform: translateY(-20px);
+  }
   }
 @media (max-width: 700px){
   .noticias-generales {
