@@ -331,9 +331,6 @@ body {
     z-index: 1;
   }  
   }
-@media (max-width: 500px){
-
-}
 @media (max-width: 700px){
   .noticias-generales {
     grid-template-columns: auto;
