@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoy</title>
+    <link rel="stylesheet" href="../js/index.js">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="icon" href="../img/TechNews.png">
+    <link rel="stylesheet" href="../css/hamburguer.css">
 
 </head>
 <body>
     
-    <header>
+    <header class="header">
    
-        <nav class="menu">
+        <nav class="navbar">
 
           <a class="navbar-brand" href="#">
             <img src="../img/TechNews.png" alt="" width="80" height="80">
           </a>
 
-            <ul class="menu-list">
+            <ul class="menu" id="menu">
                 <a href="../index.html"><li>Principal</li></a>
                 <a href="hoy.html"><li>Hoy</li></a>
                 <a href="tecnologia.html"><li>Tecnologia</li></a>
@@ -28,6 +30,11 @@
                 <a href="contacto.html"><li>contacto</li></a>
     
             </ul>
+
+            <div class="menu-bar">
+              <i class="fas fa-bars" id="menu-bar"></i>
+            </div>
+
         </nav>
         
     </header>
