@@ -219,7 +219,8 @@ body {
   background-color: #C25E30; }
 
 .footer__icon {
-  background-color: #3673D9;
+  background: -webkit-linear-gradient(to left, #dd1818, #333333);  
+  background: linear-gradient(to left, #dd1818, #333333); 
   text-align: center;
   padding: 1rem;
   font-size: 35px; }
@@ -234,8 +235,8 @@ body {
   .checkbtn {
     display: block; }
   .formulario {
-    transform: translateX(-22px);
-    transform: translateY(500px); }
+    transform: translateX(-200px);
+    transform: translateY(00px); }
   .bodu {
     position: relative; }
   .noticia {
